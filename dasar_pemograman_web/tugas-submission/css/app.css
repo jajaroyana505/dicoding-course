@@ -1,0 +1,177 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+
+  margin: 0;
+  padding: 0;
+}
+
+h2,
+h3 {
+  color: #059212;
+}
+
+footer {
+  padding: 20px;
+  color: white;
+  background-color: #059212;
+
+  text-align: center;
+  font-weight: bold;
+}
+
+nav a {
+  font-size: 18px;
+
+  font-weight: 500;
+  text-decoration: none;
+
+  color: white;
+}
+
+nav a:hover {
+  font-weight: 600;
+}
+
+.profile header {
+  text-align: center;
+}
+
+.featured-image {
+  width: 100%;
+  max-width: 500px;
+  max-height: 200px;
+  object-fit: cover;
+  object-position: center;
+  flex: 1;
+}
+
+.profile {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.profile img {
+  max-width: 200px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 20px;
+}
+
+article.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 20px;
+  display: flex;
+  gap: 1rem;
+}
+.card-body {
+  flex: 2;
+}
+.card-body h2 {
+  margin-top: 0;
+}
+
+.jumbotron {
+  padding: 60px;
+  background-color: #f3ffdeaf;
+  /* background-color: rgba(0, 0, 0, 0.5);  */
+  text-align: center;
+  color: white;
+}
+
+.jumbotron::before {
+  width: 100%;
+  background-image: url("../img/alun-alun.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 19rem;
+  right: 0;
+  top: 0;
+  content: "";
+  position: absolute;
+  z-index: -1;
+}
+
+nav ul {
+  padding-inline: 4rem;
+  display: flex;
+  gap: 2rem;
+}
+
+nav li {
+  list-style-type: none;
+}
+
+nav {
+  /* background-color: #06d001; */
+  background-color: #06d001;
+  padding: 5px;
+
+  position: sticky;
+  top: 0;
+}
+
+main {
+  padding: 20px;
+
+  display: flex;
+  gap: 1.5rem;
+}
+
+#content {
+  flex: 5;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem 2rem;
+}
+
+aside {
+  /* position: fixed; */
+  flex: 1;
+}
+
+header {
+  display: inline;
+}
+
+.wisata-image {
+  width: 100%;
+  max-height: 300px;
+
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Perangkat dengan lebar layar 1200px dan di bawahnya */
+@media screen and (max-width: 1200px) {
+  main {
+    flex-flow: column nowrap;
+  }
+  main aside {
+    align-self: center;
+  }
+  article.card {
+    flex-flow: column;
+  }
+}
+/* Perangkat dengan lebar layar 768px dan di bawahnya */
+@media screen and (max-width: 768px) {
+  nav ul {
+    justify-content: center;
+  }
+  main aside {
+    align-self: stretch;
+  }
+  article.card {
+    flex-flow: column;
+  }
+}

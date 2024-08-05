@@ -1,0 +1,176 @@
+/* * {
+  box-sizing: border-box;
+}
+
+*/
+html,
+body {
+  font-family: Raleway, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #5c8374;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  text-align: center;
+  background-color: #edfff9;
+  padding: 2rem;
+  margin-bottom: 1rem;
+}
+
+.content {
+  width: 40%;
+  margin: auto;
+}
+
+.card {
+  margin: 1%;
+  padding: 2% 3%;
+  border: rgb(128, 128, 128) solid 1px;
+  background-color: #fff;
+  color: #092635;
+  border-radius: 5px;
+  flex: 12;
+  background-color: #edfff9;
+}
+.card h2 {
+  /* text-align: center; */
+  margin-bottom: 5px;
+}
+.form-control {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-control button {
+  cursor: pointer;
+  border-radius: 20px;
+  font-size: large;
+  padding: 10px 20px;
+  background-color: #5c8374;
+  border: #092635 solid 2px;
+  color: white;
+  flex: auto;
+}
+.form-control button:hover {
+  background-color: #608d7c;
+  border: #092635 solid 2px;
+  color: white;
+}
+
+.form-search {
+  display: flex;
+}
+
+.form-search button {
+  cursor: pointer;
+  border-radius: 0px 8px 8px 0px !important;
+  padding: 10px;
+  margin-bottom: 8px;
+  flex: 1;
+  font-size: 18px;
+  background-color: #5c8374;
+  /* border: #092635 solid; */
+  color: white;
+}
+.form-search input {
+  flex: 3;
+  border-radius: 8px 0px 0px 8px !important;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5px;
+}
+
+.input-group label {
+  margin-bottom: 4px;
+  font-size: 18px;
+  font-weight: lighter;
+}
+
+input[type="text"],
+input[type="number"] {
+  background: #ffffff;
+  border: 2px solid #092635;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 8px;
+  font-size: 18px;
+}
+
+.checkbox {
+  margin-bottom: 4px;
+  font-size: 18px;
+  font-weight: lighter;
+}
+
+.bookItem {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border: 2px solid #5c8374;
+  color: #092635;
+  background-color: #fff;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  gap: 1rem;
+}
+
+.bookData {
+  flex: auto;
+}
+
+.bookData h3 {
+  margin-bottom: 10px;
+}
+.bookData p {
+  font-size: small;
+}
+.bookAction {
+  flex: auto;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 2px;
+}
+
+.bookAction button {
+  cursor: pointer;
+  border-radius: 10px;
+  padding: 5px;
+  background-color: #5c8374;
+  color: white;
+  flex: auto;
+  border: none;
+}
+.bookAction button:hover {
+  color: #092635;
+  background-color: #9ec8b9;
+}
+
+/*
+
+/* Perangkat dengan lebar layar 1200px dan di bawahnya */
+@media screen and (max-width: 1200px) {
+  .content {
+    width: 60%;
+  }
+}
+/* Perangkat dengan lebar layar 768px dan di bawahnya */
+@media screen and (max-width: 768px) {
+  .content {
+    width: 80%;
+  }
+}
